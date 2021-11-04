@@ -154,3 +154,17 @@ func (f futureSignRawTransactionWithKey) Receive() (omnijson.SignRawTransactionW
 	err = json.Unmarshal(data, &result)
 	return result, err
 }
+
+type futureSignRawTransactionWithWallet chan *response
+
+func (f futureSignRawTransactionWithWallet) Receive() (omnijson.SignRawTransactionWithWalletResult, error) {
+	var result omnijson.SignRawTransactionWithWalletResult
+
+	data, err := receive(f)
+	if err != nil {
+		return result, err
+	}
+
+	err = json.Unmarshal(data, &result)
+	return result, err
+}

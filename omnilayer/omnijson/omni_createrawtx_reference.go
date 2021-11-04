@@ -5,7 +5,7 @@ type OmniCreateRawTxReferenceResult = string
 type OmniCreateRawTxReferenceCommand struct {
 	Raw         string
 	Destination string
-	Amount      float64
+	//Amount      string
 }
 
 func (OmniCreateRawTxReferenceCommand) Method() string {
@@ -17,5 +17,6 @@ func (OmniCreateRawTxReferenceCommand) ID() string {
 }
 
 func (cmd OmniCreateRawTxReferenceCommand) Params() []interface{} {
-	return []interface{}{cmd.Raw, cmd.Destination, cmd.Amount}
+	//return []interface{}{cmd.Raw, cmd.Destination, cmd.Amount}
+	return []interface{}{cmd.Raw, cmd.Destination}
 }
