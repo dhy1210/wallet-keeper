@@ -1,6 +1,6 @@
 package omnilayer
 
-import "github.com/cmingxu/wallet-keeper/omnilayer/omnijson"
+import "github.com/dhy1210/wallet-keeper/omnilayer/omnijson"
 
 func (c *Client) OmniFoundedSend(from, to string, propertyid int64, amount, fee string) (omnijson.OmniFoundedSendResult, error) {
 	return futureOmniFoundedSend(c.do(omnijson.OmniFoundedSendCommand{

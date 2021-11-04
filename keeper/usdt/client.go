@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/cmingxu/wallet-keeper/keeper"
-	"github.com/cmingxu/wallet-keeper/omnilayer"
-	"github.com/cmingxu/wallet-keeper/omnilayer/omnijson"
+	"github.com/dhy1210/wallet-keeper/keeper"
+	"github.com/dhy1210/wallet-keeper/omnilayer"
+	"github.com/dhy1210/wallet-keeper/omnilayer/omnijson"
 
 	"github.com/btcsuite/btcd/btcjson"
 	log "github.com/sirupsen/logrus"

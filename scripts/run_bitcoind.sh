@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 CONTAINER_NAME=bitcoind-node
-#IMAGE_NAME=cmingxu/bitcoin-core
+#IMAGE_NAME=dhy1210/bitcoin-core
 IMAGE_NAME=ruimarinho/bitcoin-core
 DAEMON=${1:yes}
 

@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/cmingxu/wallet-keeper/api"
+	"github.com/dhy1210/wallet-keeper/api"
 
 	log "github.com/sirupsen/logrus"
 	"github.com/urfave/cli"

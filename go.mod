@@ -1,4 +1,4 @@
-module github.com/cmingxu/wallet-keeper
+module github.com/dhy1210/wallet-keeper
 
 require (
 	github.com/allegro/bigcache v1.2.0 // indirect
