@@ -4,7 +4,7 @@ type SendRawTransactionResult = string
 
 type SendRawTransactionCommand struct {
 	Hex           string
-	AllowHighFees bool
+	//AllowHighFees bool
 }
 
 func (SendRawTransactionCommand) Method() string {
@@ -16,5 +16,6 @@ func (SendRawTransactionCommand) ID() string {
 }
 
 func (cmd SendRawTransactionCommand) Params() []interface{} {
-	return []interface{}{cmd.Hex, cmd.AllowHighFees}
+	//return []interface{}{cmd.Hex, cmd.AllowHighFees}
+	return []interface{}{cmd.Hex}
 }
